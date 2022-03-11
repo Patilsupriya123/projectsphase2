@@ -1,0 +1,21 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-mapping package="com.ecommerce">
+    	<class name="product" table="product">
+    		<id name="id">
+    			<generator class="identity"></generator>
+    		</id>
+    		<property name="product_name" type="String"></property>
+    		<property name="product_price" type="BigDecimal"></property>
+    		<property name="product_quantity" type="int" ></property>
+
+    </class>
+</Hibernate-mapping>
+
+
